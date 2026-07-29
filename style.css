@@ -1,0 +1,685 @@
+/* =====================================================
+   STOREVERSE
+   Professional SaaS Theme
+   Part 1
+   Reset, Variables, Global Styles,
+   Typography, Buttons, Navbar
+===================================================== */
+/* ===========================
+   GOOGLE FONT
+=========================== */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+/* ===========================
+   RESET
+=========================== */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+html{
+    scroll-behavior:smooth;
+}
+body{
+    font-family:"Poppins",sans-serif;
+    background:#f7faff;
+    color:#1e293b;
+    line-height:1.6;
+}
+/* ===========================
+   VARIABLES
+=========================== */
+:root{
+    --primary:#2563eb;
+    --primary-dark:#1d4ed8;
+    --secondary:#ffffff;
+    --accent:#dbeafe;
+    --background:#f8fbff;
+    --card:#ffffff;
+    --text:#1e293b;
+    --text-light:#64748b;
+    --border:#e2e8f0;
+    --shadow:
+        0 10px 30px rgba(0,0,0,.08);
+    --radius:18px;
+    --transition:.3s ease;
+}
+/* ===========================
+   GLOBAL
+=========================== */
+body{
+    background:var(--background);
+}
+img{
+    display:block;
+    max-width:100%;
+}
+a{
+    text-decoration:none;
+    color:inherit;
+}
+ul{
+    list-style:none;
+}
+section{
+    padding:80px 8%;
+}
+main{
+    overflow:hidden;
+}
+.section-header{
+    text-align:center;
+    margin-bottom:50px;
+}
+.section-header h2{
+    font-size:2.2rem;
+    margin-top:10px;
+}
+.section-tag{
+    color:var(--primary);
+    font-weight:600;
+    letter-spacing:1px;
+}
+/* ===========================
+   TYPOGRAPHY
+=========================== */
+h1{
+    font-size:3.6rem;
+    line-height:1.15;
+    font-weight:700;
+}
+h2{
+    font-size:2rem;
+    margin-bottom:20px;
+}
+h3{
+    font-size:1.25rem;
+    margin-bottom:12px;
+}
+p{
+    color:var(--text-light);
+}
+/* ===========================
+   BUTTONS
+=========================== */
+.btn-primary{
+    display:inline-block;
+    padding:14px 30px;
+    background:var(--primary);
+    color:#fff;
+    border-radius:50px;
+    font-weight:600;
+    transition:var(--transition);
+    box-shadow:var(--shadow);
+}
+.btn-primary:hover{
+    background:var(--primary-dark);
+    transform:translateY(-3px);
+}
+.btn-secondary{
+    display:inline-block;
+    padding:14px 30px;
+    border:2px solid var(--primary);
+    color:var(--primary);
+    border-radius:50px;
+    font-weight:600;
+    transition:var(--transition);
+}
+.btn-secondary:hover{
+    background:var(--primary);
+    color:#fff;
+}
+/* ===========================
+   CARD
+=========================== */
+.card{
+    background:var(--card);
+    padding:30px;
+    border-radius:var(--radius);
+    box-shadow:var(--shadow);
+    transition:var(--transition);
+}
+.card:hover{
+    transform:translateY(-8px);
+}
+/* ===========================
+   NAVBAR
+=========================== */
+header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    backdrop-filter:blur(12px);
+    background:rgba(255,255,255,.85);
+    border-bottom:1px solid var(--border);
+}
+.navbar{
+    width:90%;
+    margin:auto;
+    height:80px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+.logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+.logo img{
+    width:42px;
+}
+.logo span{
+    font-size:1.4rem;
+    font-weight:700;
+    color:var(--primary);
+}
+.nav-links{
+    display:flex;
+    gap:35px;
+}
+.nav-links a{
+    font-weight:500;
+    color:var(--text);
+    transition:var(--transition);
+}
+.nav-links a:hover{
+    color:var(--primary);
+}
+.nav-buttons{
+    display:flex;
+    gap:15px;
+}
+/* =====================================================
+   STOREVERSE
+   Professional SaaS Theme
+   Part 2
+   Hero, Features, Categories,
+   Statistics, About, Contact, Footer
+===================================================== */
+/* ===========================
+   HERO SECTION
+=========================== */
+.hero{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:80px;
+    min-height:92vh;
+}
+.hero-content{
+    flex:1;
+}
+.hero-image{
+    flex:1.40;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.hero-image img{
+    width:100%;
+    max-width:720px;
+    height:auto;
+.hero{
+    padding:30px 0;
+}
+}
+/* ===========================
+   FEATURES
+=========================== */
+.feature-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:30px;
+}
+.card{
+    text-align:center;
+}
+.card h3{
+    color:var(--primary);
+    margin-bottom:15px;
+}
+.card p{
+    font-size:.95rem;
+}
+/* ===========================
+   SHOP CATEGORIES
+=========================== */
+.category-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:25px;
+}
+.category-card{
+    background:#fff;
+    border-radius:var(--radius);
+    padding:30px 20px;
+    text-align:center;
+    box-shadow:var(--shadow);
+    transition:var(--transition);
+}
+.category-card:hover{
+    transform:translateY(-8px);
+}
+.category-card img{
+    width:70px;
+    margin:0 auto 20px;
+}
+.category-card h3{
+    margin:0;
+    color:var(--text);
+}
+/* ===========================
+   STATISTICS
+=========================== */
+.stats{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:25px;
+    text-align:center;
+}
+.stat{
+    background:#fff;
+    padding:35px;
+    border-radius:var(--radius);
+    box-shadow:var(--shadow);
+}
+.stat h2{
+    color:var(--primary);
+    font-size:2.5rem;
+    margin-bottom:10px;
+}
+.stat p{
+    color:var(--text-light);
+}
+/* ===========================
+   ABOUT
+=========================== */
+.about-content{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:40px;
+    align-items:start;
+}
+.about-text p{
+    margin-bottom:20px;
+}
+.about-card{
+    background:#fff;
+    padding:35px;
+    border-radius:var(--radius);
+    box-shadow:var(--shadow);
+}
+.about-card ul{
+    margin-top:20px;
+}
+.about-card li{
+    margin-bottom:15px;
+    color:var(--text-light);
+    padding-left:8px;
+}
+/* ===========================
+   CONTACT
+=========================== */
+.contact-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:30px;
+}
+.contact-card{
+    background:#fff;
+    padding:35px;
+    border-radius:var(--radius);
+    text-align:center;
+    box-shadow:var(--shadow);
+    transition:var(--transition);
+}
+.contact-card:hover{
+    transform:translateY(-8px);
+}
+.contact-card h3{
+    color:var(--primary);
+}
+/* ===========================
+   FOOTER
+=========================== */
+.footer{
+    background:#0f172a;
+    color:#fff;
+    padding:70px 8% 30px;
+}
+.footer-content{
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr;
+    gap:50px;
+}
+.footer-brand img{
+    width:48px;
+    margin-bottom:20px;
+}
+.footer-brand h3{
+    color:#fff;
+}
+.footer-brand p{
+    color:#cbd5e1;
+}
+.footer h4{
+    margin-bottom:18px;
+    color:#fff;
+}
+.footer-links ul,
+.footer-account ul{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+}
+.footer-links a,
+.footer-account a{
+    color:#cbd5e1;
+    transition:var(--transition);
+}
+.footer-links a:hover,
+.footer-account a:hover{
+    color:#fff;
+}
+.footer hr{
+    margin:40px 0 25px;
+    border:none;
+    border-top:1px solid rgba(255,255,255,.15);
+}
+.copyright{
+    text-align:center;
+    color:#cbd5e1;
+    font-size:.9rem;
+}
+/* =====================================================
+   STOREVERSE
+   Professional SaaS Theme
+   Part 3
+   Forms, Login, Register,
+   Utilities, Animations, Responsive
+===================================================== */
+/* ===========================
+   LOGIN & REGISTER PAGE
+=========================== */
+.auth-page{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:60px 20px;
+    background:linear-gradient(135deg,#eff6ff,#dbeafe);
+}
+.auth-container{
+    width:100%;
+    max-width:1100px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    background:#ffffff;
+    border-radius:24px;
+    overflow:hidden;
+    box-shadow:0 20px 60px rgba(0,0,0,.12);
+}
+.auth-banner{
+    background:linear-gradient(135deg,#2563eb,#1d4ed8);
+    color:#ffffff;
+    padding:60px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+.auth-banner h2{
+    color:#ffffff;
+    margin-bottom:20px;
+}
+.auth-banner p{
+    color:#e2e8f0;
+}
+.auth-card{
+    padding:50px;
+    background:#ffffff;
+}
+.auth-card h2{
+    text-align:center;
+    margin-bottom:10px;
+}
+.auth-card p{
+    text-align:center;
+    margin-bottom:35px;
+}
+/* ===========================
+   FORM
+=========================== */
+.form-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+.form-group{
+    display:flex;
+    flex-direction:column;
+    margin-bottom:20px;
+}
+.form-group.full-width{
+    grid-column:1 / -1;
+}
+label{
+    margin-bottom:8px;
+    font-weight:600;
+    color:var(--text);
+}
+input,
+select,
+textarea{
+    width:100%;
+    padding:14px 16px;
+    border:1px solid var(--border);
+    border-radius:12px;
+    background:#ffffff;
+    font-size:.95rem;
+    transition:var(--transition);
+    outline:none;
+    font-family:inherit;
+}
+textarea{
+    resize:vertical;
+    min-height:120px;
+}
+input:focus,
+select:focus,
+textarea:focus{
+    border-color:var(--primary);
+    box-shadow:0 0 0 4px rgba(37,99,235,.12);
+}
+/* ===========================
+   CHECKBOX
+=========================== */
+.checkbox-group{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin:20px 0;
+}
+.checkbox-group input{
+    width:auto;
+}
+.checkbox-group label{
+    margin:0;
+    font-weight:500;
+}
+/* ===========================
+   LOGIN OPTIONS
+=========================== */
+.form-options{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin:20px 0;
+    font-size:.9rem;
+}
+.form-options a{
+    color:var(--primary);
+}
+.form-options a:hover{
+    text-decoration:underline;
+}
+/* ===========================
+   BUTTONS
+=========================== */
+.form-actions{
+    display:flex;
+    gap:15px;
+    margin-top:25px;
+}
+.form-actions .btn-primary,
+.form-actions .btn-secondary{
+    flex:1;
+    text-align:center;
+    border:none;
+    cursor:pointer;
+    font-size:1rem;
+}
+/* ===========================
+   LINKS
+=========================== */
+.auth-footer{
+    text-align:center;
+    margin-top:30px;
+}
+.auth-footer a{
+    color:var(--primary);
+    font-weight:600;
+}
+.auth-footer a:hover{
+    text-decoration:underline;
+}
+/* ===========================
+   HTML5 VALIDATION
+=========================== */
+input:valid,
+select:valid,
+textarea:valid{
+    border-color:#22c55e;
+}
+input:invalid:focus,
+select:invalid:focus,
+textarea:invalid:focus{
+    border-color:#ef4444;
+}
+/* ===========================
+   UTILITIES
+=========================== */
+.text-center{
+    text-align:center;
+}
+.mt-20{
+    margin-top:20px;
+}
+.mt-40{
+    margin-top:40px;
+}
+.mb-20{
+    margin-bottom:20px;
+}
+.hidden{
+    display:none;
+}
+/* ===========================
+   ANIMATIONS
+=========================== */
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+.hero,
+.features,
+.categories,
+.stats,
+.about,
+.contact,
+.auth-card{
+    animation:fadeUp .8s ease;
+}
+/* ===========================
+   RESPONSIVE
+=========================== */
+@media(max-width:992px){
+.hero{
+    flex-direction:column;
+    text-align:center;
+}
+.hero-text{
+    margin-left:auto;
+    margin-right:auto;
+}
+.hero-buttons{
+    justify-content:center;
+}
+.about-content{
+    grid-template-columns:1fr;
+}
+.footer-content{
+    grid-template-columns:1fr;
+}
+.auth-container{
+    grid-template-columns:1fr;
+}
+.auth-banner{
+    display:none;
+}
+}
+@media(max-width:768px){
+.navbar{
+    flex-direction:column;
+    height:auto;
+    padding:20px 0;
+    gap:20px;
+}
+.nav-links{
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:18px;
+}
+.nav-buttons{
+    width:100%;
+    justify-content:center;
+}
+.form-grid{
+    grid-template-columns:1fr;
+}
+section{
+    padding:60px 6%;
+}
+h1{
+    font-size:2.5rem;
+}
+h2{
+    font-size:1.8rem;
+}
+.auth-card{
+    padding:35px 25px;
+}
+}
+@media(max-width:480px){
+.hero-buttons,
+.form-actions{
+    flex-direction:column;
+}
+.btn-primary,
+.btn-secondary{
+    width:100%;
+    text-align:center;
+}
+.logo span{
+    font-size:1.2rem;
+}
+.section-header h2{
+    font-size:1.6rem;
+}
+}

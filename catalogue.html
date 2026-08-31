@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>StoreVerse | Product Catalogue</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+    <h2>StoreVerse</h2>
+
+    <nav>
+        <a href="index2.html">Home</a>
+        <a href="catalogue.html">Catalogue</a>
+        <a href="login2.html">Login</a>
+        <a href="register2.html">Register</a>
+    </nav>
+</header>
+
+<main>
+
+<section class="catalogue-header">
+
+    <h1>StoreVerse Product Catalogue</h1>
+
+    <p>Explore products from different shops.</p>
+
+    <input type="text"
+           id="search"
+           placeholder="Search products..."
+           onkeyup="searchProducts()">
+
+</section>
+
+
+<section class="product-grid">
+
+    <div class="product-card">
+        <h3>Laptop</h3>
+        <p>Electronics | TechHub</p>
+        <b>₹50,000</b>
+        <button onclick="addCart('Laptop')">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <h3>Wireless Headphones</h3>
+        <p>Electronics | AudioMart</p>
+        <b>₹2,499</b>
+        <button onclick="addCart('Wireless Headphones')">
+            Add to Cart
+        </button>
+    </div>
+
+    <div class="product-card">
+        <h3>T-Shirt</h3>
+        <p>Fashion | StyleHub</p>
+        <b>₹999</b>
+        <button onclick="addCart('T-Shirt')">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <h3>Sneakers</h3>
+        <p>Fashion | FootWear</p>
+        <b>₹2,999</b>
+        <button onclick="addCart('Sneakers')">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <h3>Grocery Pack</h3>
+        <p>Grocery | FreshMart</p>
+        <b>₹499</b>
+        <button onclick="addCart('Grocery Pack')">
+            Add to Cart
+        </button>
+    </div>
+
+    <div class="product-card">
+        <h3>Coffee Powder</h3>
+        <p>Grocery | DailyNeeds</p>
+        <b>₹349</b>
+        <button onclick="addCart('Coffee Powder')">
+            Add to Cart
+        </button>
+    </div>
+
+    <div class="product-card">
+        <h3>Skincare Kit</h3>
+        <p>Pharmacy | CarePlus</p>
+        <b>₹799</b>
+        <button onclick="addCart('Skincare Kit')">
+            Add to Cart
+        </button>
+    </div>
+
+    <div class="product-card">
+        <h3>Notebook Set</h3>
+        <p>Stationery | BookWorld</p>
+        <b>₹299</b>
+        <button onclick="addCart('Notebook Set')">
+            Add to Cart
+        </button>
+    </div>
+
+</section>
+
+</main>
+
+<footer>
+    © 2026 StoreVerse. All Rights Reserved.
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

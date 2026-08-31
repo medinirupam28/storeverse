@@ -64,8 +64,7 @@
 <p>
 Register as a new Shop Owner.
 </p>
-<form action="#"
-      method="post">
+<form action="#" method="post" onsubmit="return validateForm()">
 <div class="form-grid">
 <div class="form-group">
 <label for="owner">
@@ -119,7 +118,6 @@ Mobile Number
 type="tel"
 id="mobile"
 name="mobile"
-pattern="[0-9]{10}"
 placeholder="10 digit number"
 required>
 </div>
@@ -259,5 +257,6 @@ required>
         © 2026 StoreVerse. All Rights Reserved.
     </p>
 </footer>
+<script src="script.js"></script>
 </body>
 </html>

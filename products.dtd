@@ -1,0 +1,10 @@
+<!ELEMENT products (product+)>
+
+<!ELEMENT product (name, category, shop, price)>
+
+<!ATTLIST product id ID #REQUIRED>
+
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT category (#PCDATA)>
+<!ELEMENT shop (#PCDATA)>
+<!ELEMENT price (#PCDATA)>

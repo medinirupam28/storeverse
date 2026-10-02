@@ -1,0 +1,17 @@
+[
+    {
+        "name": "Laptop",
+        "category": "Electronics",
+        "price": 50000
+    },
+    {
+        "name": "T-Shirt",
+        "category": "Fashion",
+        "price": 999
+    },
+    {
+        "name": "Grocery Pack",
+        "category": "Grocery",
+        "price": 499
+    }
+]

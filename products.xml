@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE products SYSTEM "products.dtd">
+
+<products>
+
+    <product id="P101">
+        <name>Laptop</name>
+        <category>Electronics</category>
+        <shop>TechHub</shop>
+        <price>50000</price>
+    </product>
+
+    <product id="P102">
+        <name>T-Shirt</name>
+        <category>Fashion</category>
+        <shop>StyleHub</shop>
+        <price>999</price>
+    </product>
+
+    <product id="P103">
+        <name>Grocery Pack</name>
+        <category>Grocery</category>
+        <shop>FreshMart</shop>
+        <price>499</price>
+    </product>
+
+</products>

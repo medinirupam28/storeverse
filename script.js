@@ -50,3 +50,55 @@ function searchProducts() {
 function addCart(product) {
     alert(product + " added to cart!");
 }
+function loadProducts() {
+
+    fetch("products.txt")
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("textProducts")
+                    .innerText = data;
+        })
+        .catch(error => {
+            console.log("Error:", error);
+        });
+}
+function loadJSON() {
+
+    fetch("products.json")
+        .then(response => response.json())
+        .then(data => {
+
+            let output = "";
+
+            data.forEach(product => {
+                output +=
+                    product.name + " - " +
+                    product.category + " - ₹" +
+                    product.price + "\n";
+            });
+
+            document.getElementById("jsonProducts")
+                    .textContent = output;
+        });
+}
+function addProduct() {
+
+    let product = {
+        name: document.getElementById("pname").value,
+        category: document.getElementById("pcategory").value,
+        price: document.getElementById("price").value
+    };
+
+    fetch("https://jsonplaceholder.typicode.com/posts", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(product)
+    })
+    .then(response => response.json())
+    .then(data => {
+        document.getElementById("postResult").textContent =
+            JSON.stringify(data, null, 2);
+    });
+}

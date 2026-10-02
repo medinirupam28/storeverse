@@ -752,3 +752,26 @@ h2{
         width: 100%;
     }
 }
+
+.loaded-data {
+    text-align: center;
+    padding: 40px;
+}
+
+.loaded-data button {
+    padding: 10px 20px;
+    margin: 20px;
+    background: #2563EB;
+    color: white;
+    border: 0;
+    border-radius: 8px;
+}
+
+#textProducts {
+    white-space: pre-line;
+    margin: auto;
+    max-width: 500px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+}

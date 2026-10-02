@@ -105,7 +105,41 @@
     </div>
 
 </section>
+<section class="loaded-data">
 
+    <h2>Latest Products</h2>
+
+    <button onclick="loadProducts()">
+        Load Products
+    </button>
+
+    <div id="textProducts"></div>
+
+</section>
+<section class="loaded-data">
+
+    <h2>JSON Products</h2>
+
+    <button onclick="loadJSON()">
+        Load JSON Products
+    </button>
+
+    <pre id="jsonProducts"></pre>
+
+</section>
+<section class="loaded-data">
+
+    <h2>Add Product</h2>
+
+    <input type="text" id="pname" placeholder="Product Name">
+    <input type="text" id="pcategory" placeholder="Category">
+    <input type="number" id="price" placeholder="Price">
+
+    <button onclick="addProduct()">Submit Product</button>
+
+    <pre id="postResult"></pre>
+
+</section>
 </main>
 
 <footer>
